@@ -1,0 +1,140 @@
+body {
+    background-color: #526D82 !important;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* עיצוב NAV */
+nav {
+    color: white;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    font-family: 'Lato', sans-serif;
+    margin-top: 1%;
+}
+
+/* עיצוב תפריט */
+.navbar-nav {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color:#ffd700 !important;
+}
+
+/* תפריט רספונסיבי */
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* עיצוב FOOTER */
+footer {
+    background-color: #27374D !important; 
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* עיצוב זכויות יוצרים */
+.footer-container p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* עיצוב רשתות חברתיות */
+.social-links {
+    list-style: none; /* מסיר נקודות מהרשימה */
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center; /* ממקם במרכז */
+}
+
+.social-links li {
+    display: inline;
+}
+
+.social-links a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color:#ffd700;
+}
+
+
+.contact-section {
+    font-family: 'Lato', sans-serif;
+    margin-top: 7%;
+    color: white;
+    padding: 60px 20px;
+    text-align: left;
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.contact-section .subtitle {
+    color: #fffefe;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-list li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.contact-list i {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #ffd700; /* צבע האייקון */
+}
+
+.contact-list a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-list a:hover {
+    color: #f6df86;
+}

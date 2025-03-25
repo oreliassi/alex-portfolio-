@@ -1,0 +1,120 @@
+body {
+    background-color: #526D82 !important;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* עיצוב NAV */
+nav {
+    color: white;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    font-family: 'Lato', sans-serif;
+    margin-top: 1%;
+}
+
+/* עיצוב תפריט */
+.navbar-nav {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color:#ffd700 !important;
+}
+
+/* תפריט רספונסיבי */
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* עיצוב FOOTER */
+footer {
+    background-color: #27374D !important; 
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* עיצוב זכויות יוצרים */
+.footer-container p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* עיצוב רשתות חברתיות */
+.social-links {
+    list-style: none; /* מסיר נקודות מהרשימה */
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center; /* ממקם במרכז */
+}
+
+.social-links li {
+    display: inline;
+}
+
+.social-links a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ffd700;
+}
+
+.about-me {
+    margin-top: 7%;
+    padding: 50px 0;
+    color: white;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.profile-img {
+    width: 250px;
+    height: 250px; /* הפוך אותה לריבועית! */
+    border-radius: 50%; /* עושה אותה עגולה לגמרי */
+    border: 3px solid #f6df86; /* מסגרת צהובה */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    object-fit: cover; /* מוודא שהתמונה לא תימתח או תיחתך מוזר */
+}
+
+.about-me a {
+    color: #ffcc00; /* צבע לינקדאין */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about-me a:hover {
+    color: #ffd700; /* גוון בהיר יותר */
+}
