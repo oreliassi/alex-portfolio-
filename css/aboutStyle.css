@@ -2,8 +2,14 @@ body {
     background-color: #526D82 !important;
     color: #333;
     font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* כל גובה המסך */
 }
 
+main {
+    flex: 1; /* ממלא את כל השטח שנשאר */
+}
 
 /* עיצוב NAV */
 nav {
