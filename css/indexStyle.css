@@ -49,10 +49,8 @@ footer {
     text-align: center;
     padding: 20px 0;
     width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
 }
+
 
 .footer-container {
     display: flex;
