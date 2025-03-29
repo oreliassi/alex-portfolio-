@@ -15,7 +15,7 @@ body {
 
 main {
     flex: 1; /* ממלא את כל השטח שנשאר */
-    padding-top: 80px; /* כדי לא להתחבא מתחת ל-navbar */
+    padding-top: 20px; /* כדי לא להתחבא מתחת ל-navbar */
 }
 
 /* עיצוב NAV */
@@ -54,6 +54,32 @@ nav {
         text-align: center;
     }
 }
+
+
+.video-box {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+  
+  .video-box video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .video-box.large {
+    height: 400px;
+  }
+  
+  .video-box.square {
+    height: 300px;
+  }
+  
+  .video-box.small {
+    height: 200px;
+  }
+  
 
 /* עיצוב FOOTER */
 footer {
