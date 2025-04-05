@@ -44,82 +44,151 @@
       <div class="row mb-4">
         <div class="col-8">
           <div class="video-box large">
-            <a data-bs-toggle="modal" data-bs-target="#modalHexBloom">
-              <video autoplay muted loop playsinline>
-                <source src="videos/HexBloom_Trailer.mp4" type="video/mp4">
-              </video>
-            </a>
+            <div class="video-wrapper">
+              <a data-bs-toggle="modal" data-bs-target="#modalHexBloom">
+                <video autoplay muted loop playsinline>
+                  <source src="videos/HexBloom_Trailer.mp4" type="video/mp4">
+                </video>
+                <div class="video-overlay">
+                  <span class="game-title">HexBloom</span>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
         <div class="col-4">
           <div class="video-box large">
-            <a data-bs-toggle="modal" data-bs-target="#modalEcho">
-              <video autoplay muted loop playsinline>
-                <source src="videos/Axe_Thrower.mp4" type="video/mp4">
-              </video>
-            </a>
+            <div class="video-wrapper">
+              <a data-bs-toggle="modal" data-bs-target="#modalEcho">
+                <video autoplay muted loop playsinline>
+                  <source src="videos/Axe_Thrower.mp4" type="video/mp4">
+                </video>
+                <div class="video-overlay">
+                  <span class="game-title">Axe Thrower</span>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-
+  
       <div class="row">
         <!-- Left column (stacked videos) -->
         <div class="col-md-4 d-flex flex-column gap-3">
           <div class="video-box small">
-            <a data-bs-toggle="modal" data-bs-target="#modalAxe">
-              <video autoplay muted loop playsinline>
-                <source src="videos/Toppings_Trailer.mp4" type="video/mp4">
-              </video>
-            </a>
+            <div class="video-wrapper">
+              <a data-bs-toggle="modal" data-bs-target="#modalAxe">
+                <video autoplay muted loop playsinline>
+                  <source src="videos/Toppings_Trailer.mp4" type="video/mp4">
+                </video>
+                <div class="video-overlay">
+                  <span class="game-title">Toppings</span>
+                </div>
+              </a>
+            </div>
           </div>
           <div class="video-box small">
-            <a data-bs-toggle="modal" data-bs-target="#modalRobocorp">
-              <video autoplay muted loop playsinline>
-                <source src="videos/Robocorp_Trailer.mp4" type="video/mp4">
-              </video>
-            </a>
+            <div class="video-wrapper">
+              <a data-bs-toggle="modal" data-bs-target="#modalRobocorp">
+                <video autoplay muted loop playsinline>
+                  <source src="videos/Robocorp_Trailer.mp4" type="video/mp4">
+                </video>
+                <div class="video-overlay">
+                  <span class="game-title">Robocorp</span>
+                </div>
+              </a>
+            </div>
           </div>
           <div class="video-box small">
-            <a data-bs-toggle="modal" data-bs-target="#modalRonJoe">
-              <video autoplay muted loop playsinline>
-                <source src="videos/Ron_&_Joe.mp4" type="video/mp4">
-              </video>
-            </a>
+            <div class="video-wrapper">
+              <a data-bs-toggle="modal" data-bs-target="#modalRonJoe">
+                <video autoplay muted loop playsinline>
+                  <source src="videos/Ron_&_Joe.mp4" type="video/mp4">
+                </video>
+                <div class="video-overlay">
+                  <span class="game-title">Ron & Joe</span>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
-
+  
         <!-- Right column (large video) -->
         <div class="col-md-8">
           <div class="video-box large">
-            <a data-bs-toggle="modal" data-bs-target="#modalToppings">
-              <video autoplay muted loop playsinline>
-                <source src="videos/Echo_2-1_Trailer.mp4" type="video/mp4">
-
-              </video>
-            </a>
+            <div class="video-wrapper">
+              <a data-bs-toggle="modal" data-bs-target="#modalToppings">
+                <video autoplay muted loop playsinline>
+                  <source src="videos/Echo_2-1_Trailer.mp4" type="video/mp4">
+                </video>
+                <div class="video-overlay">
+                  <span class="game-title">Echo 2-1</span>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+  
 
   <!-- MODALS -->
   <!-- (המודאלים שלך נשארים כפי שהם, לא שיניתי אותם) -->
-
   <div class="modal fade" id="modalHexBloom" tabindex="-1">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content custom-modal">
+        <div class="modal-header border-0">
           <h5 class="modal-title">HexBloom</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body">
-          משחק אסטרטגיה צבעוני בסגנון tower defense עם נופים דינמיים ואנימציות מרהיבות.
+          <p class="game-description mb-4">
+            משחק אסטרטגיה צבעוני בסגנון Tower Defense עם נופים דינמיים ואנימציות מרהיבות.
+          </p>
+  
+          <!-- קבוצה של וידאו + טקסט בכל שורה -->
+          <div class="video-info-row d-flex flex-wrap align-items-start mb-4 pb-4 border-bottom">
+            <div class="col-md-6 pe-md-4 mb-3 mb-md-0">
+              <video class="w-100 rounded" controls>
+                <source src="videos/HexBloom_Trailer.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="col-md-6">
+              <h6>טריילר ראשי של המשחק</h6>
+              <p>הצצה לעולם הצבעוני של HexBloom עם דינמיקה של מגדלים, גלים משתנים ואנימציות חיות.</p>
+            </div>
+          </div>
+  
+          <div class="video-info-row d-flex flex-wrap align-items-start mb-4 pb-4 border-bottom">
+            <div class="col-md-6 pe-md-4 mb-3 mb-md-0">
+              <video class="w-100 rounded" controls>
+                <source src="videos/HexBloom_Level1.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="col-md-6">
+              <h6>שלב ראשון – כניסת אויבים</h6>
+              <p>איך המשחק מתחיל? מבט על שלב הפתיחה כולל הסבר על סוגי האויבים הראשונים ומבנה המפה.</p>
+            </div>
+          </div>
+  
+          <div class="video-info-row d-flex flex-wrap align-items-start">
+            <div class="col-md-6 pe-md-4 mb-3 mb-md-0">
+              <video class="w-100 rounded" controls>
+                <source src="videos/HexBloom_BossFight.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="col-md-6">
+              <h6>בוס פייט – שלב מתקדם</h6>
+              <p>קרב מול בוס חכם עם מתקפות משתנות – שילוב של אסטרטגיה וניהול משאבים.</p>
+            </div>
+          </div>
+  
         </div>
       </div>
     </div>
   </div>
-
+  
   <div class="modal fade" id="modalEcho" tabindex="-1">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
