@@ -15,6 +15,7 @@ body {
 
 main {
     flex: 1; /* ממלא את כל השטח שנשאר */
+    padding-top: 70px; /* לפי הגובה של ה-navbar (15px פדינג למעלה ולמטה) */
 }
 
 
@@ -28,7 +29,6 @@ nav {
     left: 0;
     z-index: 1000;
     font-family: 'Lato', sans-serif;
-    margin-top: 1%;
 }
 
 /* עיצוב תפריט */

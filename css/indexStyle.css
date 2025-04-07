@@ -15,7 +15,7 @@ html, body {
   
   main {
     flex: 1;
-    padding-top: 20px; /* מרווח מתחת ל-navbar */
+    padding-top: 70px; /* לפי הגובה של ה-navbar (15px פדינג למעלה ולמטה) */
   }
   
   /* עיצוב NAV */
@@ -28,7 +28,6 @@ html, body {
     left: 0;
     z-index: 1000;
     font-family: 'Lato', sans-serif;
-    margin-top: 1%;
   }
   
   .navbar-nav {
