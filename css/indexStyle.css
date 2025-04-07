@@ -28,7 +28,7 @@ html, body {
     left: 0;
     z-index: 1000;
     font-family: 'Lato', sans-serif;
-  
+    margin-top: 1%;
   }
   
   .navbar-nav {
