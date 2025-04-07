@@ -20,6 +20,7 @@ main {
 
 /* עיצוב NAV */
 nav {
+    margin-top: 10px; /* הוסף מרווח מעל התפריט */
     color: white;
     padding: 15px 20px;
     position: fixed;
